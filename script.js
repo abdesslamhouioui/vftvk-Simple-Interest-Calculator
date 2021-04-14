@@ -6,7 +6,10 @@ function compute()
     let years = document.getElementById("years").value;
     let interest = principal * years * rate / 100;
     let actual_year = years + 2021;
-    document.getElementById("result").innerHTML = " If you deposit " + principal  +  " at an interest rate of " + rate + " You will receive an amount of " + interest + " interest " +" in the year " actual_year ;
+    document.getElementById("result").innerHTML =  "If you deposit <mark>" + principal + "</mark>,<br />" +
+        "at an interest rate of <mark>" + rate + "</mark>.<br />" +
+        "You will receive an amount of <mark>" + interest + "</mark>,<br />" +
+        "in the year <mark>" + actual_year + "</mark>";
 }
 function range_display()
 {
